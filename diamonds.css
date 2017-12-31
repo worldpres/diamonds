@@ -1,0 +1,53 @@
+html, body{
+	margin: 0px;
+	padding: 0px;
+}
+#bg {
+	/* background: radial-gradient(ellipse at center, #e145ff 0%, #3a0045 100%); */
+	background: #ff45ff;
+	background: linear-gradient(0deg, #000000, #ff45ff);
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+@font-face {
+    font-family: font1;
+    src: url('StencilGothic.ttf');
+}
+
+.title{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+}
+.title h1{
+	font-family: font1;
+	font-weight: 900;
+	font-size: 60px;
+	letter-spacing: 2px;
+	line-height: 40px;
+	position: relative;
+}
+.title h1:after{
+	content: "";
+	display: block;
+	height: 1px;
+	width: 50%;
+	background: #fff;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+.title h2{
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 15px;
+	line-height: 15px;
+	letter-spacing: 0.5px;
+}
